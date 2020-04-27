@@ -7,7 +7,15 @@ class Timer extends Component {
   };
 
   // add your code here
-
+  componentDidMount(){
+    console.log('mount')
+    setInterval(()=>{
+      this.setState({time: this.state.time+1})
+    }, 1000)
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval)
+  }
   render() {
     const { time, color } = this.state;
     return (

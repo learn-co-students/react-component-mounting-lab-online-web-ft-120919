@@ -87,7 +87,7 @@ q {
 .mountText {
   font-size: 200%;
   animation-name: animateMount;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
